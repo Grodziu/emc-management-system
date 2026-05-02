@@ -235,38 +235,6 @@ The project contains helper entry points used during development:
 - `pl.emcmanagement.app.DemoMediaSeederRunner`
 - `pl.emcmanagement.app.PasswordMigrationRunner`
 
-## CI
-
-GitHub Actions workflow:
-
-- [.github/workflows/ci.yml](.github/workflows/ci.yml)
-
-It runs Maven tests on push and pull request.
-
-## How to publish on GitHub safely
-
-1. Verify that `app-local.properties` does not exist in the staged files.
-2. Verify that `release/`, `generated-reports/`, `target/`, `out/` and `.idea/` are not staged.
-3. Verify that `src/main/resources/app.properties` does not contain any real credentials.
-4. Commit the source code only.
-5. Upload the portable ZIP separately on GitHub Releases.
-
-Useful commands:
-
-```bash
-git init
-git add .
-git status
-git commit -m "Initial public release"
-git branch -M main
-git remote add origin <YOUR_GITHUB_REPOSITORY_URL>
-git push -u origin main
-```
-
-Then publish the portable ZIP through:
-
-- `GitHub -> Releases -> Draft a new release -> Upload binary assets`
-
 ## Notes
 
 - On startup the application may verify DB connectivity, migrate legacy plaintext passwords, synchronize workflow state and import desktop climate files if available.
