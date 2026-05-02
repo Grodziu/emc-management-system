@@ -1,0 +1,21 @@
+# Copy this file to app-local.properties and adjust values for your machine.
+# The file app-local.properties is ignored by Git.
+
+# Database
+db.url=jdbc:mysql://localhost:3306/emc_management_system?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+db.user=root
+db.password=
+
+# Optional Brandfetch integration
+brandfetch.api.key=
+brandfetch.client.id=
+brandfetch.referer=https://emc-management.local/
+
+# Optional logo domain overrides
+brandfetch.domain.BMW=bmw.com
+brandfetch.domain.STELLANTIS=stellantis.com
+brandfetch.domain.VOLVO=volvocars.com
+brandfetch.domain.AUDI=audi.com
+brandfetch.domain.MERCEDES-BENZ=mercedes-benz.com
+brandfetch.domain.VOLKSWAGEN=volkswagen.com
+brandfetch.domain.PORSCHE=porsche.com

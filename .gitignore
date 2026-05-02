@@ -1,0 +1,26 @@
+# Maven / build output
+/target/
+/out/
+/production/
+/generated-reports/
+/release/
+/logs/
+/db/data/
+/portable-*/
+
+# IntelliJ / IDE
+/.idea/
+*.iml
+
+# Local configuration
+/app-local.properties
+
+# Local helper artifacts
+/-
+
+# OS / misc
+Thumbs.db
+.DS_Store
+*.log
+hs_err_pid*
+replay_pid*
